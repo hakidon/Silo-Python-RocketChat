@@ -438,7 +438,8 @@ def silo_game_start():
     if isVictor == player_checker:
         print("Congratulation, you win!")
     elif isVictor == non_player_checker:
-        rocket.chat_post_message(game_stop_msg, room_id=game_room_id).json()
+        if game_room_id:
+            rocket.chat_post_message(game_stop_msg, room_id=game_room_id).json()
         print("You lose this time. Don't give up!")
         
                 
