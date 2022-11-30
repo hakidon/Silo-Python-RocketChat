@@ -26,7 +26,7 @@ checker_filler = '0'
 
 # Silo game constant 
 TOTAL_COL = 6
-INIT_ROW = 1
+INIT_ROW = 3
 WIN_HEIGHT = (TOTAL_COL * INIT_ROW) // 2
 silo_arr = []
 silo_player_active = {}
