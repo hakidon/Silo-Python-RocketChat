@@ -1,5 +1,4 @@
 # pip3 install rocketchat_API
-# pip3 install keyboard
 from requests import sessions
 from rocketchat_API.rocketchat import RocketChat
 from getpass import getpass
