@@ -3,7 +3,6 @@ from requests import sessions
 from rocketchat_API.rocketchat import RocketChat
 from getpass import getpass
 import time
-from colorama import Fore, Style
 
 class bcolors:
     RED = '\033[91m'
@@ -230,13 +229,13 @@ def checker_setup_update(move, turn_counter):
 
 def get_bot_move():
     print("Bot preparing for move ... ")
-    # time.sleep(1)
+    time.sleep(1)
     act_move = int(list(silo_non_player_active.keys())[0])
     move = act_move + 1
     target = move - 1 
     print("Chosen column '{}'".format(move))
     print("Moving {} <- {}...".format(target, move))
-    # time.sleep(1)
+    time.sleep(1)
     return act_move
 
 def flush_input():
@@ -265,7 +264,7 @@ def get_player_move(active_list):
                 raise Exception
             print("Chosen column '{}'".format(move))
             print("Moving {} -> {}...".format(move, target))
-            # time.sleep(1)
+            time.sleep(1)
             break
         except:
             print("Input invalid! Please try again.")
